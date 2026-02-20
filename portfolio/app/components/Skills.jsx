@@ -8,6 +8,43 @@ import {
   GitBranch,
 } from "lucide-react";
 
+const skills = [
+  {
+    icon: Code,
+    name: "HTML & CSS",
+    description: "Semantic HTML, modern CSS, Flexbox, Grid, and clean layouts",
+  },
+  {
+    icon: Zap,
+    name: "JavaScript",
+    description:
+      "Core JavaScript, ES6+, DOM manipulation, basic async patterns",
+  },
+  {
+    icon: Palette,
+    name: "React",
+    description: "Functional components, hooks, props, basic state management",
+  },
+  {
+    icon: Database,
+    name: "Backend Fundamentals",
+    description:
+      "Basic Node.js concepts, REST APIs, and understanding how data flows",
+  },
+  {
+    icon: Smartphone,
+    name: "Responsive Design",
+    description:
+      "Mobile-first layouts, media queries, and practical responsiveness",
+  },
+  {
+    icon: GitBranch,
+    name: "Git & GitHub",
+    description:
+      "Version control, branching, commits, and managing personal projects",
+  },
+];
+
 function Skills() {
   return (
     <div>
