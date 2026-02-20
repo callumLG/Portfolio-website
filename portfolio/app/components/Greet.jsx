@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 function Greet() {
   return (
@@ -8,8 +9,9 @@ function Greet() {
         Junior Web Developer / Frontend Developer
       </p>
       <div className=" flex gap-2.5 mx-auto my-8">
-        <button className="text-[#A8C5E8] w-50 border-2 rounded-lg py-3 hover:bg-[#A8C5E8] hover:text-black transition duration-300 cursor-pointer inline-block">
+        <button className="text-[#A8C5E8] w-50 border-2 rounded-lg py-3 hover:bg-[#A8C5E8] hover:text-black transition duration-300 cursor-pointer  flex justify-center gap-1">
           View Projects
+          <ArrowRight />
         </button>
         <a
           href="/callum-govenderCV.docx"
