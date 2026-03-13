@@ -10,12 +10,15 @@ function Greet() {
       </p>
       <div className=" flex gap-2.5 mx-auto my-8">
         <button className="text-[#A8C5E8] w-50 border-2 rounded-lg py-3 hover:bg-[#A8C5E8] hover:text-black transition duration-300 cursor-pointer  flex justify-center gap-1">
-          <a href="#projects"> View Projects</a>
-          <ArrowRight />
+          <a href="#projects">
+            {" "}
+            View Projects
+            <ArrowRight />
+          </a>
         </button>
         <a
-          href="/callum-govenderCV.docx"
-          download="callum-govenderCV.docx"
+          href="/callumGovenderCV.docx"
+          download="callumGovenderCV.docx"
           className="text-[#F5A3A3] w-50 border-2 rounded-lg py-3  hover:bg-[#F5A3A3] hover:text-black transition duration-300 inline-block"
         >
           CV
