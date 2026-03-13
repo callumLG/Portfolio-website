@@ -20,7 +20,7 @@ function About() {
           alt="avitar"
           className="w-50  lg:w-100  rounded-full ml-4 border-2 border-gray-800 "
         />
-        <div className="flex flex-col items-center justify-center gap-3 sm:gap-4">
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 lg:flex-col">
           <a
             href="https://www.linkedin.com/in/callum-govender-027a9b29a/"
             target="_blank"
