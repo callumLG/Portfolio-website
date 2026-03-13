@@ -20,9 +20,10 @@ const projects = [
   },
   {
     title: "Demo Project",
-    description: "A demo site to showcase my seo skills",
+    description:
+      "A responsive food distribution landing page built with React. The project focuses on clean UI design, reusable components, and fast client-side performance. It includes structured sections for services, product offerings, and contact information while demonstrating modern frontend development practices.",
     image: "/demoSite/demoSite.png",
-    tags: ["javascript", "html", "css"],
+    tags: ["javascript", "html", "css", "react"],
     github: "https://github.com/callumLG/react-food-distribution-website",
     demo: "https://react-food-distribution-website.vercel.app",
   },
