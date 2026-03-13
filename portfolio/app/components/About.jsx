@@ -21,7 +21,7 @@ function About() {
           className="w-50  lg:w-100  rounded-full ml-4 border-2 border-gray-800 "
         />
         <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 lg:flex-col">
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/callum-govender-027a9b29a/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ function About() {
             <span className="hidden sm:inline text-sm font-medium">
               LinkedIn
             </span>
-          </a>
+          </a> */}
 
           <a
             href="https://github.com/callumLG"
