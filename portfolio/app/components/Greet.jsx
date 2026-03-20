@@ -11,7 +11,11 @@ function Greet() {
         Junior Web Developer / Frontend Developer
       </p>
       <div className="flex gap-1 mx-auto w-max mt-4">
-        <p className=" text-white text-lg justify-center items-center border-2 border-gray-800 rounded-full px-4 py-2   mt-4  hover:border-[#A8C5E8] transition-all duration-300">
+        <a
+          href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwLMkqKzNg9GJLKS1KSswDADk2Bgc&q=durban&rlz=1C1CHZN_enZA1118ZA1118&oq=durban&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyCggCEAAYsQMYgAQyCggDEAAYsQMYgAQyCggEEC4YsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGD3SAQgyOTU3ajBqMagCALACAA&sourceid=chrome&ie=UTF-8"
+          target="_blank"
+          className="cursor-pointer text-white text-lg justify-center items-center border-2 border-gray-800 rounded-full px-4 py-2   mt-4  hover:border-[#A8C5E8] transition-all duration-300"
+        >
           <MapPin className="inline-block mr-1 text-white" size={18} />
           Durban, South Africa
           <Image
@@ -21,7 +25,7 @@ function Greet() {
             height={14}
             className="ml-1 inline-block"
           />
-        </p>
+        </a>
         <div className=" text-white text-lg  justify-center items-center border-2 border-gray-800 rounded-full px-4 py-2   mt-4  hover:border-[#A8C5E8] transition-all duration-300">
           <LocalTime />
         </div>
