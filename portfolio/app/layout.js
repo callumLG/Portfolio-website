@@ -16,7 +16,7 @@ export const metadata = {
   title: "Callum's Portfolio",
   description: "Callum's portfolio website showcasing projects and skills",
   icons: {
-    icon: "/icon.png",
+    Icon: "/icon.png",
   },
 };
 

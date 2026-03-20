@@ -18,7 +18,7 @@ function About() {
     >
       <h1 className="text-5xl font-bold mb-12 text-center">About Me</h1>
       <div className="flex flex-col lg:flex-row items-center gap-8">
-        <p className="w-screen lg:w-157.5 text-base leading-relaxed opacity-90  px-5  text-center md:text-left ">
+        <p className="w-screen md:w-150 lg:w-157.5 text-base leading-relaxed opacity-90  px-5  text-center md:text-left ">
           I&apos;m a junior web developer focused on building clean, reliable
           web interfaces using modern tools. I care about structure,
           readability, and writing code that&apos;s easy to maintain. I&apos;m

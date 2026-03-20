@@ -80,9 +80,9 @@ function Contact() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         <div>
           <p className="text-gray-300 mb-6">
-            I'm currently open to new opportunities and collaborations. Whether
-            you have a project in mind or just want to connect, feel free to
-            reach out!
+            I&apos;m currently open to new opportunities and collaborations.
+            Whether you have a project in mind or just want to connect, feel
+            free to reach out!
           </p>
 
           <a
@@ -141,7 +141,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#0B0B0B] border border-[#333333] focus:border-[#A8C5E8] focus:outline-none transition-colors"
+              className="w-full px-4 py-3 rounded-4xl bg-[#0B0B0B] border border-[#333333] hover:border-[#A8C5E8] focus:border-[#A8C5E8] focus:outline-none transition-colors"
             />
           </div>
 
@@ -156,7 +156,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#0B0B0B] border border-[#333333] focus:border-[#A8C5E8] focus:outline-none transition-colors"
+              className="w-full px-4 py-3 rounded-4xl bg-[#0B0B0B] border border-[#333333] hover:border-[#A8C5E8] focus:border-[#A8C5E8] focus:outline-none transition-colors"
             />
           </div>
 
@@ -171,7 +171,7 @@ function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#0B0B0B] border border-[#333333] focus:border-[#A8C5E8] focus:outline-none resize-none transition-colors"
+              className="w-full px-4 py-3 rounded-4xl bg-[#0B0B0B] border border-[#333333] hover:border-[#A8C5E8] focus:border-[#A8C5E8] focus:outline-none resize-none transition-colors"
             />
           </div>
 

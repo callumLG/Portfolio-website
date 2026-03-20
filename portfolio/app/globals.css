@@ -7,3 +7,45 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes planeFall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(var(--rotate-start)) scale(0.9);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  35% {
+    transform: translate3d(
+        calc(var(--drift-x) * 0.35),
+        calc(var(--drift-y) * 0.35),
+        0
+      )
+      rotate(var(--rotate-mid)) scale(1);
+  }
+
+  70% {
+    transform: translate3d(
+        calc(var(--drift-x) * 0.75),
+        calc(var(--drift-y) * 0.72),
+        0
+      )
+      rotate(calc(var(--rotate-mid) - 8deg)) scale(1.03);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate3d(var(--drift-x), var(--drift-y), 0)
+      rotate(var(--rotate-end)) scale(0.96);
+    opacity: 0;
+  }
+}
+
+.plane-fall {
+  animation-name: planeFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
   {
@@ -19,7 +20,7 @@ const projects = [
     demo: "https://mazegamep1.vercel.app",
   },
   {
-    title: "Demo Project",
+    title: "Responsive Business Website",
     description:
       "A responsive food distribution landing page built with React. The project focuses on clean UI design, reusable components, and fast client-side performance. It includes structured sections for services, product offerings, and contact information while demonstrating modern frontend development practices.",
     image: "/demoSite/demoSite.png",
@@ -43,12 +44,15 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="rounded-lg overflow-hidden bg-[#111111] border border-[#222222] hover:border-[#A8C5E8] transition-all duration-300 group flex flex-col"
+              className="rounded-4xl
+       overflow-hidden bg-[#111111] border border-[#222222] hover:border-[#A8C5E8] transition-all duration-300 group flex flex-col"
             >
-              <div className="relative overflow-hidden h-40 sm:h-44 md:h-48">
-                <img
+              <div className="rounded-4xl relative overflow-hidden h-40 sm:h-44 md:h-48">
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={100}
+                  height={100}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

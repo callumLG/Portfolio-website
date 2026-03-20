@@ -51,14 +51,14 @@ function Skills() {
         className="max-w-6xl mx-auto
 "
       >
-        <h1 className="text-5xl font-bold text-center mb-12 ">Skills</h1>
+        <h1 className="text-5xl font-bold text-center mb-12 ">My Skills</h1>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           {skills.map((skill) => {
             const Icon = skill.icon;
             return (
               <div
                 key={skill.name}
-                className="p-6 sm:p-7 md:p-8 rounded-lg bg-[#0B0B0B] border border-[#222222] hover:border-[#A8C5E8] transition-colors duration-300 group"
+                className="rounded-4xl mx-3 p-6 sm:p-7 md:p-8  bg-[#0B0B0B] border border-[#222222] hover:border-[#A8C5E8] transition-colors duration-300 group"
               >
                 <Icon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 mb-3 sm:mb-4 text-[#A8C5E8] group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">
