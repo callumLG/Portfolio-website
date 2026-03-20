@@ -91,6 +91,15 @@ function Contact() {
           >
             callumlevigovender@gmail.com
           </a>
+          <p>
+            Cell Number:{" "}
+            <a
+              href="tel:+27790824102"
+              className="text-[#A8C5E8] hover:underline"
+            >
+              +27 79 082 4102
+            </a>
+          </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
