@@ -1,6 +1,7 @@
 import React from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -37,15 +38,17 @@ function Projects() {
       className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 text-white"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center">
+        <h2 className="flex items-center justify-centers text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center gap-2">
           Projects
+          <Link href="/projects" className="ml-2">
+            <MoveRight className="hover:text-[#A8C5E8] transition-colors duration-200 w-8 h-8 " />
+          </Link>
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="rounded-4xl
-       overflow-hidden bg-[#111111] border border-[#222222] hover:border-[#A8C5E8] transition-all duration-300 group flex flex-col"
+              className="rounded-4xl overflow-hidden bg-[#111111] border border-[#222222] hover:border-[#A8C5E8] transition-all duration-300 group flex flex-col"
             >
               <div className="rounded-4xl relative overflow-hidden h-40 sm:h-44 md:h-48">
                 <Image
