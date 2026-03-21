@@ -1,13 +1,16 @@
 import React from "react";
 import { ArrowRight, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import LocalTime from "./LocalTime";
+import FadeIn from "./Animate";
 
 function Greet() {
+  const name = "Callum Govender";
   return (
     <div className="text-center  my-62.5 lg:my-87.5 flex flex-col gap-4 tracking-tight">
       <h1 className="text-5xl sm:text-7xl font-bold text-white ">
-        Callum Govender
+        <FadeIn text={name} />
       </h1>
       <p className="text-2xl text-gray-300 mt-4">
         Junior Web Developer / Frontend Developer
@@ -33,16 +36,24 @@ function Greet() {
         </div>
       </div>
       <div className=" flex gap-2.5 mx-auto my-8">
-        <button className="text-[#A8C5E8] w-fit md:w-50 flex px-2 border-2 rounded-lg py-3 hover:bg-[#A8C5E8] hover:text-black transition duration-300 cursor-pointer justify-center gap-1">
-          <a href="#projects"> View Projects</a>
-          <ArrowRight />
-        </button>
-        <a
-          href="/callumGovenderCV.docx"
-          download="callumGovenderCV.docx"
-          className="text-[#F5A3A3] w-fit md:w-50 px-5 border-2 rounded-lg py-3  hover:bg-[#F5A3A3] hover:text-black transition duration-300 inline-block"
-        >
-          CV
+        <a href="#projects">
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.5 }}
+            className="text-[#A8C5E8] w-fit md:w-50 flex px-2 border-2 rounded-lg py-3 hover:bg-[#A8C5E8] hover:text-black transition duration-300 cursor-pointer justify-center gap-1"
+          >
+            View Projects
+            <ArrowRight />
+          </motion.button>
+        </a>
+        <a href="/callumGovenderCV.docx" download="callumGovenderCV.docx">
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.5 }}
+            className="cursor-pointer text-[#F5A3A3] w-fit md:w-50 px-5 border-2 rounded-lg py-3  hover:bg-[#F5A3A3] hover:text-black transition duration-300 inline-block"
+          >
+            CV
+          </motion.button>
         </a>
       </div>
     </div>
