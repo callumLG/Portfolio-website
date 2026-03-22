@@ -89,9 +89,9 @@ function Projects() {
       <div className="max-w-6xl mx-auto">
         <h2 className="flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center gap-2">
           Projects
-          <Link className="ml-2" aria-label="View all projects">
+          {/* <Link className="ml-2" aria-label="View all projects">
             <MoveRight className="hover:text-[#A8C5E8] transition-colors duration-200 w-8 h-8" />
-          </Link>
+          </Link> */}
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
